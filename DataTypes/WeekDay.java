@@ -2,24 +2,22 @@
 
 import java.util.*;
 
-public class WeekDay {
+public enum WeekDay {
 
-    enum WeekDayType {
-        MONDAY,
-        TUESDAY,
-        WEDNESDAY,
-        THURSDAY,
-        FRIDAY,
-        SATURDAY,
-        SUNDAY
-    }
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY;
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter week day number : ");
         int weekDayNumber = scan.nextInt();
         int takingModulo = weekDayNumber % 7 == 0 ? 7 : weekDayNumber % 7;
-        System.out.println("Day on " + weekDayNumber + " is " + WeekDayType.values()[takingModulo - 1]);
+        System.out.println("Day on " + weekDayNumber + " is " + WeekDay.values()[takingModulo - 1]);
         scan.close();
     }
 }
