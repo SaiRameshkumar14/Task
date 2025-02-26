@@ -14,7 +14,6 @@ public class SecondOccurance {
             userInputArray[i] = scan.nextInt();
         }
 
-        System.out.print("Enter the Target Element to find second occurance : ");
         int target = scan.nextInt();
         int count = 0;
         for (int element : userInputArray) {
@@ -24,8 +23,8 @@ public class SecondOccurance {
         }
 
         if (count < 2) {
-            System.out.println("The " + target + " is Not Present"); 
-        }else {
+            System.out.println("The " + target + " is Not Present");
+        } else {
             System.out.println("The " + target + " is Present");
         }
     }
