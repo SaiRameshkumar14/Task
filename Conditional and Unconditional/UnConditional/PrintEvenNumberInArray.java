@@ -14,7 +14,6 @@ public class PrintEvenNumberInArray {
             userInputArray[i] = scan.nextInt();
         }
 
-        System.out.print("Enter the Target Element to find second occurance : ");
         int total = 0;
 
         for (int i = 0; i < userInputArray.length; i++) {

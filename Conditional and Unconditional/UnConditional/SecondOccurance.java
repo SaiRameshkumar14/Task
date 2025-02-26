@@ -14,6 +14,7 @@ public class SecondOccurance {
             userInputArray[i] = scan.nextInt();
         }
 
+        System.out.print("Enter the Target Element to find second occurance : ");
         int target = scan.nextInt();
         int count = 0;
         for (int element : userInputArray) {
