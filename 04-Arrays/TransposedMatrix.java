@@ -1,3 +1,4 @@
+//2.Write a program to find transpose of a matrix
 
 import java.util.*;
 
