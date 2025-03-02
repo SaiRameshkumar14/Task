@@ -1,23 +1,32 @@
-//2.Write a program to find transpose of a matrix
 
 import java.util.*;
 
 public class TransposedMatrix {
 
     public static void main(String[] args) {
-        int[][] arr = {
+        // Define original matrix
+        int[][] originalMatrix = {
             {1, 2, 3},
             {4, 5, 6}
         };
 
-        int[][] transposeArr = new int[arr[0].length][arr.length];
-        for (int i = 0; i < arr[0].length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                transposeArr[i][j] = arr[j][i];
+        // Get matrix dimensions
+        int originalRows = originalMatrix.length;
+        int originalCols = originalMatrix[0].length;
+
+        // Initialize transposed matrix with swapped dimensions
+        int[][] transposedMatrix = new int[originalCols][originalRows];
+
+        // Compute the transpose
+        for (int row = 0; row < originalCols; row++) {
+            for (int col = 0; col < originalRows; col++) {
+                transposedMatrix[row][col] = originalMatrix[col][row];
             }
         }
+
+        // Print the transposed matrix
         System.out.println("Transposed Matrix");
-        for (int[] row : transposeArr) {
+        for (int[] row : transposedMatrix) {
             System.out.println(Arrays.toString(row));
         }
     }
