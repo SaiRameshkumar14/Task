@@ -4,36 +4,36 @@ import java.util.*;
 
 public class RightRotationArray {
 
-    // function for right rotation
-    static void rightRotate(int[] userArray, int rotateCount, int length) {
-        for (int i = 0; i < rotateCount; i++) {
-            int lastElement = userArray[length - 1];
-            for (int j = length - 1; j > 0; j--) {
-                userArray[j] = userArray[j - 1];
+    // Function for right rotation
+    static void rotateRight(int[] array, int rotationCount, int arrayLength) {
+        for (int i = 0; i < rotationCount; i++) {
+            int lastElement = array[arrayLength - 1];
+            for (int j = arrayLength - 1; j > 0; j--) {
+                array[j] = array[j - 1];
             }
-            userArray[0] = lastElement;
+            array[0] = lastElement;
         }
-        System.out.println("Array after right rotation by " + rotateCount + " positions: " + Arrays.toString(userArray));
+        System.out.println("Array after right rotation by " + rotationCount + " positions: " + Arrays.toString(array));
     }
 
     // Main function
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the size of array: ");
-        int size = scan.nextInt();
+        System.out.print("Enter the size of the array: ");
+        int arraySize = scan.nextInt();
 
-        int[] userArray = new int[size];
+        int[] userArray = new int[arraySize];
 
-        // take input elements from user
-        for (int i = 0; i < size; i++) {
-            System.out.print("Enter element of " + i + " : ");
-            userArray[i] = scan.nextInt();
+        // Take input elements from the user
+        for (int index = 0; index < arraySize; index++) {
+            System.out.print("Enter element at index " + index + " : ");
+            userArray[index] = scan.nextInt();
         }
-        System.out.println(Arrays.toString(userArray));
+        System.out.println("Original Array: " + Arrays.toString(userArray));
 
         System.out.print("Enter the number of positions to rotate: ");
-        int rotate = scan.nextInt();
+        int rotationCount = scan.nextInt();
 
-        rightRotate(userArray, rotate, userArray.length);
+        rotateRight(userArray, rotationCount, userArray.length);
     }
 }
