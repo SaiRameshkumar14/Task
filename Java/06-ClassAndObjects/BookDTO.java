@@ -26,6 +26,7 @@ public class BookDTO {
         this.author = author;
         this.price = price;
         totalBook++;
+
     }
 
     // Getters and Setters for title
