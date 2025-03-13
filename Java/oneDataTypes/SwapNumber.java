@@ -1,5 +1,6 @@
-// 4. Write a program to swap the two given numbers.
+package oneDataTypes;
 
+// 4. Write a program to swap the two given numbers.
 public class SwapNumber {
 
     public static void main(String[] args) {

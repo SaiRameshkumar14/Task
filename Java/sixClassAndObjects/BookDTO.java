@@ -62,7 +62,7 @@ public class BookDTO {
     }
 
     public static void main(String[] args) {
-        BookDTO obj = new BookDTO("What", "298375bqwjebf28", "sam", totalBook);
+        BookDTO obj = new BookDTO("Zoholics", "29b8375f28", "", totalBook);
 
         System.out.println(obj.getAuthor());
         System.out.println(obj.author);

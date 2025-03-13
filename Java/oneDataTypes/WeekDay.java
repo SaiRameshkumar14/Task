@@ -1,5 +1,6 @@
-//5. Write a Java program that gets a number from the user and displays the name of the weekday. Use enum.
+package oneDataTypes;
 
+//5. Write a Java program that gets a number from the user and displays the name of the weekday. Use enum.
 import java.util.*;
 
 public enum WeekDay {

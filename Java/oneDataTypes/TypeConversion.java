@@ -1,5 +1,6 @@
-// 2. Write a program to demonstrate compatible type conversions. For eg., float to int, double to float, int to short
+package oneDataTypes;
 
+// 2. Write a program to demonstrate compatible type conversions. For eg., float to int, double to float, int to short
 public class TypeConversion {
 
     public static void main(String[] args) {

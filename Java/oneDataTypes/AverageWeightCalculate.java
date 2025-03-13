@@ -1,7 +1,8 @@
+package oneDataTypes;
+
 // 6. Write a program that calculates the average weight of 10 people. 
 //Use descriptive and meaningful variable names following Java naming conventions. 
 //Use proper datatypes for the variables.
-
 import java.util.*;
 
 public class AverageWeightCalculate {
