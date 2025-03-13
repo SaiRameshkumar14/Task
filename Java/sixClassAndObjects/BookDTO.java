@@ -1,4 +1,5 @@
 // 1. Create Book DTO class with attributes like title, ISBN etc. Create appropriate instance variables, static variables and methods with appropriate access modifiers.
+package sixClassAndObjects;
 
 public class BookDTO {
 
@@ -11,12 +12,7 @@ public class BookDTO {
 
     @Override
     public String toString() {
-        return "BookDTO{"
-                + "title='" + title + '\''
-                + ", ISBN='" + ISBN + '\''
-                + ", author='" + author + '\''
-                + ", price=" + price
-                + '}';
+        return "BookDTO{" + "title='" + title + '\'' + ", ISBN='" + ISBN + '\'' + ", author='" + author + '\'' + ", price=" + price + '}';
     }
 
     //constructor
@@ -63,5 +59,17 @@ public class BookDTO {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public static void main(String[] args) {
+        BookDTO obj = new BookDTO("What", "298375bqwjebf28", "sam", totalBook);
+
+        System.out.println(obj.getAuthor());
+        System.out.println(obj.author);
+        obj.author = "tam";
+
+        System.out.println(obj.getAuthor());
+        System.out.println(obj.author);
+
     }
 }
