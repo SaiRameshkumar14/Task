@@ -1,4 +1,3 @@
-// 1. Create Book DTO class with attributes like title, ISBN etc. Create appropriate instance variables, static variables and methods with appropriate access modifiers.
 package sixClassAndObjects;
 
 public class BookDTO {
@@ -10,22 +9,16 @@ public class BookDTO {
 
     public static int totalBook = 0;
 
-    @Override
-    public String toString() {
-        return "BookDTO{" + "title='" + title + '\'' + ", ISBN='" + ISBN + '\'' + ", author='" + author + '\'' + ", price=" + price + '}';
-    }
-
-    //constructor
+    // Constructor
     public BookDTO(String title, String ISBN, String author, double price) {
         this.title = title;
         this.ISBN = ISBN;
         this.author = author;
         this.price = price;
         totalBook++;
-
     }
 
-    // Getters and Setters for title
+    // Getters and Setters
     public String getTitle() {
         return title;
     }
@@ -34,16 +27,14 @@ public class BookDTO {
         this.title = title;
     }
 
-    //Getters and setters for ISBN
     public String getISBN() {
         return ISBN;
     }
 
-    public void setters(String ISBN) {
+    public void setISBN(String ISBN) {  // Fixed setter method name
         this.ISBN = ISBN;
     }
 
-    // Getters and setters for author
     public String getAuthor() {
         return author;
     }
@@ -52,7 +43,6 @@ public class BookDTO {
         this.author = author;
     }
 
-    // Getters and setters for price
     public double getPrice() {
         return price;
     }
@@ -61,15 +51,11 @@ public class BookDTO {
         this.price = price;
     }
 
-    public static void main(String[] args) {
-        BookDTO obj = new BookDTO("Zoholics", "29b8375f28", "", totalBook);
+    public static int getTotalBooks() {  // Getter for totalBook
+        return totalBook;
+    }
 
-        System.out.println(obj.getAuthor());
-        System.out.println(obj.author);
-        obj.author = "tam";
-
-        System.out.println(obj.getAuthor());
-        System.out.println(obj.author);
-
+    public void displayBookInfo() {
+        System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + ISBN + ", Price: $" + price);
     }
 }
