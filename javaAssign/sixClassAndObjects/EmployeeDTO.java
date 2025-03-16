@@ -63,14 +63,12 @@ public class EmployeeDTO {
         return "Access Restricted";
     }
 
-    @Override
-    public String toString() {
-        return "EmployeeDTO{"
-                + "employeeId='" + employeeId + '\''
-                + ", name='" + name + '\''
-                + ", designation='" + designation + '\''
-                + ", salary=" + salary
-                + ", companyName='" + companyName + '\''
-                + '}';
+    public void displayEmployeeDetails() {
+        System.out.println("Employee Details:");
+        System.out.println("ID: " + employeeId);
+        System.out.println("Name: " + name);
+        System.out.println("Designation: " + designation);
+        System.out.println("Salary: " + salary);
+        System.out.println("Company Name: " + companyName);
     }
 }

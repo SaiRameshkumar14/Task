@@ -20,7 +20,7 @@ public class BookDTO {
 
     // Getters and Setters
     public String getTitle() {
-        return title;
+        return ("Title : " + title);
     }
 
     public void setTitle(String title) {
