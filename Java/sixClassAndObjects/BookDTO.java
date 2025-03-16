@@ -31,7 +31,7 @@ public class BookDTO {
         return ISBN;
     }
 
-    public void setISBN(String ISBN) {  // Fixed setter method name
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -51,7 +51,7 @@ public class BookDTO {
         this.price = price;
     }
 
-    public static int getTotalBooks() {  // Getter for totalBook
+    public static int getTotalBooks() {
         return totalBook;
     }
 
