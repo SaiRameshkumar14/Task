@@ -55,15 +55,13 @@ public class MovieDTO {
         return rating >= 0 && rating <= MAX_RATING;
     }
 
-    @Override
-    public String toString() {
-        return "MovieDTO{"
-                + "title='" + title + '\''
-                + ", director='" + director + '\''
-                + ", genre='" + genre + '\''
-                + ", releaseYear=" + releaseYear
-                + ", durationInMinutes=" + durationInMinutes
-                + ", rating=" + rating
-                + '}';
+    public void displayMovieDetails() {
+        System.out.println("Movie Details:");
+        System.out.println("Title: " + title);
+        System.out.println("Director: " + director);
+        System.out.println("Genre: " + genre);
+        System.out.println("Release Year: " + releaseYear);
+        System.out.println("Duration: " + durationInMinutes + " minutes");
+        System.out.println("Rating: " + rating);
     }
 }
