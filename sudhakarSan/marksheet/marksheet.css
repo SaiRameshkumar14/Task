@@ -1,0 +1,114 @@
+.main-container {
+  border: 5px solid black;
+  padding: 0 50px;
+}
+
+.h-reset {
+  padding: 0;
+  margin: 0;
+}
+
+/*top elements------------------------------------------------------------------------------------------------------*/
+.top {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-logo {
+  height: 110px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.top-word {
+  display: flex;
+  flex-grow: 0.1;
+  background-color: #fff;
+  align-content: center;
+  justify-content: space-around;
+  height: 7rem;
+}
+
+.top-word-right > h4 {
+  border: 2px solid black;
+  margin: 28px 0;
+  padding: 10px;
+}
+
+.space-flex {
+  display: flex;
+  flex-grow: 0.5;
+}
+
+/*second top elements------------------------------------------------------------------------------------------------------*/
+.state-board {
+  text-align: center;
+}
+
+/*Picture paragraph QR section------------------------------------------------------------------------------------------------------*/
+.image-qr {
+  display: flex;
+  justify-content: space-around;
+}
+
+#image-qrcode {
+  width: 10rem;
+}
+
+.image-qr > p {
+  text-align: center;
+}
+
+/*Name and Year------------------------------------------------------------------------------------------------------*/
+.name-year {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name-year > h4 {
+  margin: 0;
+}
+
+.left-name {
+  flex-grow: 1;
+}
+.right-year {
+  flex-grow: 0.5;
+}
+
+.left-name-head {
+  padding: 10px;
+  border: 2px solid black;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.left-name-body {
+  border: 2px solid black;
+  padding: 0 30px;
+}
+
+.right-year-head {
+  padding: 10px;
+  border: 2px solid black;
+  border-left: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.right-year-body {
+  border: 2px solid black;
+  border-left: 0;
+  padding: 0 60px;
+}
+
+/*Middle Mark Table-----------------------------------------------------------------------------------------------------*/
+.mid-mark {
+  border: 2px solid black;
+}
