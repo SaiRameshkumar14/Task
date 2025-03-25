@@ -2,10 +2,10 @@ package sixClassAndObjects;
 
 public class BookDTO {
 
-    private String title;
-    private String ISBN;
-    private String author;
-    private double price;
+    private static String title;
+    private static String ISBN;
+    private static String author;
+    private static double price;
 
     public static int totalBook = 0;
 
@@ -55,7 +55,7 @@ public class BookDTO {
         return totalBook;
     }
 
-    public void displayBookInfo() {
+    public static void displayBookInfo() {
         System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + ISBN + ", Price: $" + price);
     }
 }
