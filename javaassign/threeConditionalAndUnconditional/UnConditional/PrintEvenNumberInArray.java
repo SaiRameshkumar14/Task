@@ -17,9 +17,10 @@ public class PrintEvenNumberInArray {
         int total = 0;
 
         for (int i = 0; i < userInputArray.length; i++) {
-            if (userInputArray[i] % 2 == 0) {
-                total += userInputArray[i];
+            if (userInputArray[i] % 2 != 0) {
+                continue;
             }
+            total += userInputArray[i];
         }
         System.out.println("Sum of even numbers: " + total);
     }
